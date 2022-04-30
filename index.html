@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>desafio-1</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -16,7 +19,7 @@
           <p>blog</p>
         </div>
         <div class="area-cabecalho">
-          <input type="text" name="" placeholder="&#128270;  pesquise" id="" />
+          <input type="text" name="" placeholder="&#128270;  Pesquisar no Blog" id="" />
         </div>
       </div>
     </header>
@@ -25,12 +28,12 @@
       <div class="flex-container">
         <div class="texto-container">
           <div class="titulo-cabecalho">
-            <div><p>29 de abril, 2022</p></div>
+            <div class="data"><p>29 de abril, 2022</p></div>
             <div><img src="./images/icon-coracao.png" alt="" /></div>
           </div>
           <div class="content">
-            <h3>Agora é oficial: o Windows 11 está vindo</h3>
-            <p>
+            <h3 class="titulo">Agora é oficial: o Windows 11 está vindo</h3>
+            <p class="descricao">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis
               lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
@@ -40,12 +43,12 @@
 
         <div class="texto-container">
           <div class="titulo-cabecalho">
-            <div><p>29 de abril, 2022</p></div>
+            <div class="data"><p>29 de abril, 2022</p></div>
             <div><img src="./images/icon-coracao.png" alt="" /></div>
           </div>
           <div class="content">
-            <h3>Tim Berners-Lee vai leiloar código-fonte da web</h3>
-            <p>
+            <h3 class="titulo">Tim Berners-Lee vai leiloar código-fonte da web</h3>
+            <p class="descricao">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis
               lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
@@ -56,20 +59,52 @@
           </div>
         </div>
 
-
         <div class="texto-container">
           <div class="titulo-cabecalho">
-            <div><p>29 de abril, 2022</p></div>
+            <div class="data"><p>29 de abril, 2022</p></div>
             <div><img src="./images/icon-coracao.png" alt="" /></div>
           </div>
           <div class="content">
-            <h3>Tem Firefox novo no pedaço e você vai querer migrar</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.
+            <h3 class="titulo">Tem Firefox novo no pedaço e você vai querer migrar</h3>
+            <p class="descricao">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vestibulum auctor est.
+            </p>
+          </div>
+        </div>
+
+        <div class="texto-container">
+          <div class="titulo-cabecalho">
+            <div class="data"><p>29 de abril, 2022</p></div>
+            <div><img src="./images/icon-coracao.png" alt="" /></div>
+          </div>
+          <div class="content">
+            <h3 class="titulo">John McAfee, criador do antivírus McAfee, morre</h3>
+            <p class="descricao">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis
+              lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
+              Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis
+              leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus
+              a lectus et, interdum ullamcorper libero.
             </p>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.texto-container', { delay: 200 });
+        ScrollReveal().reveal('.data', { delay: 400 });
+        ScrollReveal().reveal('.titulo', { delay: 500 });
+        ScrollReveal().reveal('.descricao', { delay: 600 });
+</script>
 </html>
