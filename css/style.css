@@ -1,3 +1,12 @@
+:root {
+    --white: #FFF;
+    --title: #313131;
+    --text: #B6B6B6;
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +19,7 @@ body {
 }
 
 header {
-    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    background:var(--linear);
     justify-content: center;
     display: flex;
     height: 250px;
@@ -37,7 +46,7 @@ header {
 
 .flex-container .area-cabecalho:nth-child(1) p {
     font-size: 24px;
-    color: #ffffff;
+    color: var(--white);
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -78,16 +87,17 @@ header {
     padding-bottom: 25px;
 }
 
+
 .titulo-cabecalho div p {
     font-weight: 400;
     font-size: 16px;
-    color: #717171;
+    color: var(--text);
     
 }
 
 .texto-container {
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
     padding: 25px;
     margin-bottom:50px;
 }
@@ -106,13 +116,14 @@ header {
 
 .content h3 {
     padding-bottom: 8px;
+    color :var(--title); 
 }
 
 .content p {
     width: 100%;
     font-size :18px;
     font-weight: 400;
-    color:#717171;
+    color:var(--text);
 }
 
 @media (max-width:1024px){
